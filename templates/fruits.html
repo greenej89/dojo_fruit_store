@@ -24,8 +24,15 @@
         <section class="jumbotron text-center">
           <div class="container">
             <h1 class="jumbotron-heading">Dojo Fruits</h1>
-            <p>Please figure out how to display the images here...</p>
-
+            <!-- <p>Please figure out how to display the images here...</p> -->
+            <table class="table">
+              <tr>
+                <td><img class="fruit" src="{{ url_for('static',filename='img/apple.png') }}" alt="photo of apple"></td>
+                <td><img class="fruit" src="{{ url_for('static',filename='img/blackberry.png') }}" alt="photo of blackberry"></td>
+                <td><img class="fruit" src="{{ url_for('static',filename='img/raspberry.png') }}" alt="photo of raspberry"></td>
+                <td><img class="fruit" src="{{ url_for('static',filename='img/strawberry.png') }}" alt="photo of strawberry"></td>
+              </tr>
+            </table>
             <p>
               <a href="/" class="btn btn-primary my-2">Go back</a>
             </p>
